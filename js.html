@@ -1,0 +1,503 @@
+<meta charset="utf-8">
+<script>
+//var name = prompt("Name:");
+//alert("Hello, " + name);
+
+//var a = prompt("Введите число:");
+//alert(a*a);
+
+//var a = prompt("Введите число:");
+//var b = prompt("Введите число:");
+//alert(a*b);
+
+//var v;
+//alert(v);
+//alert(typeof(v));
+
+//v = 1;
+//alert(v);
+//alert(typeof(v));
+
+//v = 'A'
+//alert(v);
+//alert(typeof(v));
+
+//var a = prompt('A: ');
+//a = parseInt('5');
+//var b = prompt('B: ');
+//b = parseInt('6');
+//alert(a+b);
+//alert(a-b);
+//alert(a*b);
+//alert(a/b);
+
+
+
+//игра в загадки
+
+/*var score = 0;
+var answer = '';
+answer = prompt('Сижу верхом, не ведаю на ком: ');
+if(answer == 'шапка'){
+	alert('верно!');
+	score = score + 1;
+} else{
+	alert('неверно!');
+}
+answer = prompt('Зимой и летом одним цветом: ');
+if(answer == 'елка'){
+	alert('верно!');
+	score = score + 1;
+} else{
+	alert('неверно!');
+}
+answer = prompt('Кто его раздевает, тот слезы проливает: ');
+if(answer == 'лук'){
+	alert('верно!');
+	score = score + 1;
+} else{
+	alert('неверно!');
+}
+	alert('Верных ответов: ' +score);
+*/
+
+
+
+//определение принадлежности чисел
+/*
+var n = parseInt(prompt('N: '));
+
+if(n>0){
+	alert('N положительное');
+}else if(n<0){
+	alert('N отрицательное');
+}else if(n==0){
+	alert('N - ноль');
+}else {
+	alert('N - введены символы');
+}
+*/
+
+//определение большего числа
+/*
+var a = parseInt(prompt('A: '));
+var b = parseInt(prompt('B: '));
+var c = parseInt(prompt('C: '));
+
+if((a>b)&&(a>c)){
+	alert('A больше всех!');
+}else if((b>a)&&(b>c)){
+	alert('B больше всех!');
+}else if((c>a)&&(c>b)){
+	alert('С больше всех!');
+}else{
+	alert('Самых больших чисел несколько!');
+}
+*/
+
+//проверка на ошибки с помощью опратора "ИЛИ"
+
+
+/*var a = parseInt(prompt('A: '));
+var b = parseInt(prompt('B: '));
+var c = parseInt(prompt('C: '));
+
+if(isNaN(a) || isNaN(b) || isNaN(c) ){
+	alert('Введены символы, а нужно было вводить только числа!!!');
+}else{
+	alert('Числа скоро будут использованы :)');
+}
+*/
+
+//проверка нахождения числа между 2 числами
+/*
+var a = parseInt(prompt('A: '));
+var b = parseInt(prompt('B: '));
+var c = parseInt(prompt('C: '));
+
+if( ((a>b)&&(a<c)) || ((a>c)&&(a<b)) ){
+	alert('А между В и С');
+}
+*/
+
+//проверка попадания числа в один из двух диапазонов
+/*
+var a = parseInt(prompt('A: '));
+var c = 0;
+var d = 35;
+if((a>c)&&(a<d)) {
+	alert('попал!');
+}else{
+	alert('промах!');
+}
+var b = parseInt(prompt('B: '));
+var e = 50;
+var f = 75;
+if( (b>e)&&(b<f) ){
+	alert('попал!');
+}else{
+	alert('промах!');
+}
+
+*/
+//альтернативный вариант
+
+/*
+var angle = prompt('A: ');
+angle = parseInt(angle);
+
+if( ( (angle >= 15) && (angle <= 30) ) ||
+( (angle >= 45) && (angle <= 60) ) ){
+	alert('цель поражена!');
+}else{
+	alert('промах!');
+}
+*/
+
+
+//циклы
+//do 
+//while
+
+//простейший цикл счета от 1 до 10
+/*
+var n = 0;
+while(n <=9){
+	n++;
+	anlert(n);
+}
+*/
+
+//программа для застолья
+/*
+do{
+	alert('ну, еще по одной!');
+} while (prompt('введи 1 чтобы выйти') != '1');
+
+alert('бывай!');
+
+*/
+
+//русская рулетка
+/*
+var n = 0;
+do{
+	if((Math.random()*6) < 1){
+		alert('финита ля комедия');
+		break;
+	}
+	n++;
+} 
+//while(prompt('1 - играем, другое - стоп: ') == 1)
+while (true);
+alert('Раундов сыграно: ' + n);
+*/
+
+//усовершенствованная версия 
+/** добавить в программу возможность прекратить игру по желанию
+после каждого раунда спрашивать игрока, хочет ли он продолжить игру*/
+/*
+var n = 0;
+do{
+	if((Math.random()*6) < 1){
+		alert('game over');
+		break;
+	}
+	n++;
+} while(prompt('1 - play, other - stop: ') == 1)
+
+alert('Rounds count: ' + n);
+*/
+
+
+//считает числа от 0 до 10 включительно
+/*
+var n = 0;
+do{
+	alert(n);
+	n++;
+} while (n <= 10)
+*/
+
+
+//цикл фор
+
+/*for(var n=0; n<=10; n++){
+	alert(n);
+}
+
+//обратный отсчет
+
+var n;
+for(n=10; n>=0; n--){
+	alert(n);
+}
+*/
+
+//посчитать от 0 до 100 и выводить четные числа
+/*
+var n;
+for(n=0; n<=100; n=n+2;){
+	alert(n);
+}
+*/
+
+//д/з
+/*вводится сумма вклада, годовая процентная ставка, срок вклада
+проценты начисляются ежегодно в конце года, с капитализацией
+посчитать итоговую сумму вклада*/
+
+/*
+var money = parseInt(prompt('Введите сумму вклада: '));
+var interest = parseInt(prompt('Введите годовую процентную ставку: '));
+var years = parseInt(prompt('Введите срок вклада, лет: '));
+
+for(var i=1; i<=years; i++){
+	money = money + money * interest / 100;
+	alert('Прошло лет: ' + i + ', сумма на счету: ' + Math.floor(money));
+}
+*/
+
+/*
+//Array
+var arr = [1,2,3];
+alert(arr);//1,2,3
+alert(arr[1]);//2
+
+//arr[1] = 5;
+
+//вызов функции и удаление последний элемент  
+arr.push(10);
+alert(arr);//1,2,3,10
+
+alert(arr.pop());//10
+alert(arr);//1,2,3
+
+*/
+
+
+//д/з
+/*
+var arr = [];
+var rounds = 100;
+var zeros = 0;
+var i = 0;
+
+for(i=0; i<=rounds; i++){
+	//целые числа от 1 до 36
+	arr.push(Math.round(Math.random()*36));
+}
+
+alert(arr);
+
+for(i=0; i<arr.length; i++){
+	if (arr[i] == 0){
+		zeros++;
+	}
+}
+
+alert('Частота выпадения зеро: ' + zeros/arr.length*100 + '%');
+*/
+/*
+var arr = [];
+var rounds = 100;
+var n = 0;
+var i = 0;
+var max_length = 0;
+var length = 0;
+
+
+for(i=0; i<=rounds; i++){
+	//генерация последовательности чисел
+	n = Math.round(Math.random()*36);
+	if(n != 0){
+		n = (n % 2) * 2 - 1;
+	}
+	arr.push(n);
+}
+
+alert(arr);
+
+for(i=0; i<arr.length; i++){
+	if(arr[i] == 1){
+		length = 0;
+		while(i < arr.length && arr[i] == 1){
+		i++;
+		length++;
+		}
+		if(length > max_length){
+			max_length = length;
+		}
+	}
+}
+alert('Частота выпадания красного: ' + max_length);
+*/
+
+
+
+
+//функции
+/*
+function getRandomInt(min, max){
+	//var n = 5;
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+*/
+
+
+
+/*
+var n = 3;
+var n = getRandomInt(0, 100);
+alert(n);
+
+n = getRandomInt(-100, 0);
+alert(n);
+
+*/
+/*
+alert(getRandomInt(0,100)); 
+alert(getRandomInt(-100, 0));   
+*/
+//функция, которая раздает игрокам карты
+/*
+function getCard(){
+	var cards = ['6','7','8','9','10', 'J','Q','K','A'];
+	return cards[getRandomInt(0, cards.length - 1)];
+}
+*/
+
+
+
+/*
+function getSum(arr){
+	var sum = 0;
+	for(sum=0; sum<arr; sum++){
+		sum=sum+1;
+	}
+	return arr.length;
+}
+
+var dealer = [getCard()];
+var player = [getCard(), getCard()];
+
+alert('Дилер: ' + dealer.join('  ') + 'Игрок: ' + player.join('  '));
+alert('Текущая сумма карт у игрока: ' + getSum(player));
+alert('Сумма карт: ' + getSum(['Q', '8', 'A']));
+*/
+
+
+
+//////////////игра блэк Джек/////////////////////////////////
+
+function getRandomInt(min, max){
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getCard(){
+	var cards = ['6','7','8','9','10', 'J','Q','K','A'];
+	return cards[getRandomInt(0, cards.length - 1)];
+}
+
+function getSum(hand){
+	var sum = 0;
+
+	//сначала считаем все карты, кроме тузов
+
+	for(var i=0; i<hand.length; i++){
+		var card = hand[i];
+		if(card != 'A'){
+		if(card == 'j' || card == 'Q' || card == 'K'){
+			sum = sum + 10;
+		}
+		else{
+			sum = sum + parseInt(card);
+		    }
+		}
+	}
+
+	//туз считается как 1, если текущая сумма больше 10, иначе - как 11
+	for(var i=0; i<hand.length; i++){
+		var card = hand[i];
+		if(card == "A"){
+			if(sum > 10){
+				sum = sum + 1;
+			}
+			else{
+				sum = sum + 11;
+				}
+			}
+		}
+	return sum;
+}
+
+//выводит инфо о текущем статусе игры
+function getStatus(){
+	return 'Дилер: ' + dealer.join(' ') + ' Игрок: ' + player.join(' ') + '.'; 
+}
+
+
+//массив карт дилера
+var dealer = [getCard()];
+// массив карт игрока
+var player = [getCard(), getCard()];
+
+if(getSum(player) == 21){
+	alert('Дьявольское везение! Black Jack на раздаче! $_$');
+}else{
+
+//запрос о решении игрока
+var answer = '';
+do{
+	answer = prompt(getStatus() + ' Хотите еще кату? 1 - да, иначе - нет');
+
+	//сдаем карту игроку либо прекращаем игру
+	if(answer == '1'){
+		player.push(getCard());
+
+		//проверяем, нет ли переборов или выигрыша
+		sum = getSum(player);
+		if(sum > 21){
+			alert('Перебор Т_Т ' + getStatus());
+			break;
+		}else if(sum == 21){
+			alert('Black Jack! :P ' + getStatus());
+			break;
+		}
+	}
+	else{
+		//игрок закончил брать карты
+		//dealer берет карты
+
+		while (getSum(dealer) < 17){
+			dealer.push(getCard());
+		};
+		//проверяем результат
+		var sumDealer = getSum(dealer);
+		var sumPlayer = getSum(player);
+
+		if(sumDealer == 21){
+			alert('У дилера Black Jack! T_T ' + getStatus());
+		}else if (sumDealer > 21){
+			alert('У дилера перебор! ]:-> ' + getStatus());
+		}else if (sumPlayer == sumDealer){
+			alert('Ничья 0_0 ' + getStatus());
+		}else if (sumPlayer > sumDealer){
+			alert('Выигрыш :) ' + getStatus());
+		}else {
+			alert(' Проигрыш :( ' + getStatus());
+		}
+	}
+}
+	while(answer == '1');
+}
+
+
+
+
+
+
+
+
+
+</script>
